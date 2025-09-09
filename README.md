@@ -1,6 +1,6 @@
 # GravSphere2
 
-GravSphere 2 is an improved solver of the spherical higher-order Jeans equations, designed to mass-model galaxies and star clusters with minimal bias and maximizing information content. It improves on previous versions of GravSphere and other methods by removing the need for binning and performing a full general treatment of higher moments. 
+GravSphere 2 is an improved solver of the spherical higher-order Jeans equations, designed to mass-model systems of stellar tracers in equilibrium such as galaxies and star clusters with minimal bias and maximizing information content. It improves on previous versions of GravSphere and other methods by removing the need for binning, using self-consistent non-Gaussian velocity distribution function modeling and performing a fully general treatment of higher moments, solving the fourth-order Jeans equations. 
 
 Here is some important information about GravSphere2 (for more information, check also python source files of the code):
 
@@ -19,9 +19,9 @@ dynesty version 2.1.5
 :::: CITATIONS ::::
 If using this code, please cite the following code papers:
 
-Bañares-Hernández et al. (release paper)
+Bañares-Hernández et al. (release paper, soon to appear in the arXiv)
 
-and former GravSphere papers
+and former GravSphere papers:
 
 https://ui.adsabs.harvard.edu/abs/2017MNRAS.471.4541R/abstract
 https://ui.adsabs.harvard.edu/abs/2018MNRAS.481..860R/abstract
@@ -50,7 +50,7 @@ https://ui.adsabs.harvard.edu/abs/2025arXiv250418617T/abstract
 
 
 :::: BUGS ::::
-If you spot any bugs, please let us know!
+If you spot any bugs (or have any questions), please let us know!
 
 
 :::: NOTES ::::
@@ -110,6 +110,6 @@ can be done without binning, or a binned profile if only that is available),
 and information for setting up the priors. You can also change the gravsphere2
 file if you e.g. want a different mass model, introduce new parameters etc.
 
-Andrés Bañares Hernández, Justin Read, & Mariana P Julio| 09/09/25 
+Andrés Bañares Hernández, Justin Read, & Mariana P. Júlio| 09/09/25 
 
 
