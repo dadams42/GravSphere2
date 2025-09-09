@@ -11,7 +11,7 @@ import os
 
 print('Running dynesty ... ')
 
-fsname = str(diro + 'Sampler Chains/fornax_pm100_chk')
+fsname = str(diro + 'Sampler Chains/fornax_pm100_example_chk')
 
 if __name__ == '__main__':
   #ncpus = int(sys.argv[1])
