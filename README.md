@@ -107,7 +107,7 @@ To input your own data, you should create your own initiliase_ file with
 the same format as the ones from the examples. This will include tracer
 positions and velocities, data for the tracer profiles (positions, which 
 can be done without binning, or a binned profile if only that is available),
-and information for setting up the priors. You can also change the gravsphere2
+and information for setting up the priors. You can also change the GravSphere2
 file if you e.g. want a different mass model, introduce new parameters etc.
 
 Andrés Bañares Hernández, Justin Read, & Mariana P. Júlio| 09/09/25 
