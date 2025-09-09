@@ -110,6 +110,6 @@ can be done without binning, or a binned profile if only that is available),
 and information for setting up the priors. You can also change the gravsphere2
 file if you e.g. want a different mass model, introduce new parameters etc.
 
-Andrés Bañares Hernández & Justin Read| 01/08/25 
+Andrés Bañares Hernández, Justin Read, & Mariana P Julio| 09/09/25 
 
 
