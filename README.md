@@ -19,7 +19,7 @@ dynesty version 2.1.5
 :::: CITATIONS ::::
 If using this code, please cite the following code papers:
 
-Bañares-Hernández et al. (release paper, soon to appear in the arXiv)
+Bañares-Hernández et al. (release paper): https://ui.adsabs.harvard.edu/abs/2025arXiv250924103B/abstract 
 
 and former GravSphere papers:
 
