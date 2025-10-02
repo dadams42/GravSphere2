@@ -25,5 +25,5 @@ if __name__ == '__main__':
 # if __name__ == '__main__':
 #   ncpus = 42 #number of CPUs, arbitrary number (depending on availability)
 #   pool = Pool(ncpus) 
-#   dns = DynamicNestedSampler.restore(fsname, pool = pool)
+#   dns = dynesty.DynamicNestedSampler.restore(fsname, pool = pool)
 #   dns.run_nested(checkpoint_file=fsname, use_stop = False, resume = True)
