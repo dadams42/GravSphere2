@@ -96,7 +96,7 @@ To run an example:
    checkpoint file from which all data can be retrieved and be 
    run subsequently if needed.
 
-5. We have also created an notebook (plots_example_notebook.ipynb) where we 
+5. We have also created a notebook (plots_example_notebook.ipynb) where we 
    show examples of plotting density, slope, anisotropy, dispersion, and 
    kurtosis profiles, similar to those from Bañares-Hernández et al.
 
