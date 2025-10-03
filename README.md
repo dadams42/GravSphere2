@@ -43,6 +43,7 @@ https://github.com/justinread/gravsphere
 
 If using the Gaia Challenge mock data, please cite:
 https://ui.adsabs.harvard.edu/abs/2021MNRAS.501..978R/abstract
+https://ui.adsabs.harvard.edu/abs/2011ApJ...742...20W/abstract 
 http://astrowiki.ph.surrey.ac.uk/dokuwiki/doku.php?id=start
 
 If using the simulated dwarf galaxy data, please cite:
@@ -50,7 +51,6 @@ https://ui.adsabs.harvard.edu/abs/2025arXiv250418617T/abstract
 
 :::: BUGS ::::
 If you spot any bugs (or have any questions), please let us know!
-
 
 :::: NOTES ::::
 Note that this public release of the code is distinct from
