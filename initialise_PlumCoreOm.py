@@ -1,19 +1,33 @@
 import numpy as np
 from constants import * 
-
+import os
 
 dirf = 'Data/Gaia Challenge/' #directory for data
-diro = 'Output/Gaia Challenge/' #directory for Output
+
+#Creates directory for Output data (if it doesn't exist already)
+
+name = 'Gaia Challenge'
+
+diro = 'Output/' + name +'/' 
+
+dirs = [diro + 'Plots', diro + 'Sampler Chains']
+
+for newpath in dirs:
+
+    if not os.path.exists(newpath):
+        
+        os.makedirs(newpath)
 
 vdata = '1krltr_vels_plumcoreom.txt' #1k tracers (LOS + PMs)
 #vdata = '100rltr_vels_plumcoreom.txt' #100 tracers (LOS + PMs)
 #vdata = '10krltr_vels_plumcoreom.txt' #10k tracers (LOS + PMs)
 
+#r denotes projected radius, and v velocities (with errors with a suffix _err), LOS = line-of-sight, PMR = radial PMs, PMt = tangential PMs.
 
 rLOS, vLOS, vLOS_err, vPMt, vPMt_err, vPMR, vPMR_err = np.loadtxt(str(dirf + vdata)) #LOS + proper-motion position + velocity data (1k tracers)
 rPM = rLOS
 
-R, surfden, surfdenerr = np.loadtxt(str(dirf + 'photplumcore.txt')) #photometric tracer profile
+R, surfden, surfdenerr = np.loadtxt(str(dirf + 'photplumcore.txt')) #photometric tracer profile (binned)
 
 propermotion = True #fitting proper motions?
 
@@ -37,8 +51,7 @@ barrad_max = rmax
 bar_pnts = 300
 
 ###########################################################
-#Priors
-
+#Prior limits
 
 pfits = np.array([13, 0.25,2,5,0.1]) #reference values of alpha-beta-gamma profile obtained from pre-fitting (rho0, r0, alp, bet, gam) this can be #done e.g. with binulator, directly fitting or manually (e.g. looking at a Plummer profile matching central density and ~ Rhalf for the scale radius)
 tracertol = 0.5 #tolerance for flat priors around best-fit / reference tracer profile values

@@ -1,8 +1,22 @@
 import numpy as np
 from constants import * 
+import os
 
 dirf = 'Data/Fornax Simulation/' #directory for data
-diro = 'Output/Fornax Simulation/' #directory for Output
+
+#Creates directory for Output data (if it doesn't exist already)
+
+name = 'Fornax Simulation'
+
+diro = 'Output/' + name +'/' 
+
+dirs = [diro + 'Plots', diro + 'Sampler Chains']
+
+for newpath in dirs:
+
+    if not os.path.exists(newpath):
+        
+        os.makedirs(newpath)
 
 #vdata = 'forall1k.txt' #1k tracers (LOS + PMs)
 
@@ -16,10 +30,12 @@ vdata = 'forall100.txt' #100 tracers (LOS + PMs)
 #and 'fornaxlos100.txt' (100 tracers) to match the same data / definition of LOS as Tchiorniy & Genina 2025, in this case,
 #you can do rLOS, vLOS, vLOS_err = np.loadtxt(dirf + vdata) and propermotion = False (no PMs). We've also included the 10, 25, 50 tracer files.
 
+#r denotes projected radius, and v velocities (with errors with a suffix _err), LOS = line-of-sight, PMR = radial PMs, PMt = tangential PMs.
+
 rLOS, vLOS, vLOS_err, vPMt, vPMt_err, vPMR, vPMR_err = np.loadtxt(str(dirf + vdata)) #LOS + proper-motion position + velocity data (1k tracers)
 rPM = rLOS
 
-#rLOS, vLOS, vLOS_err = np.loadtxt(str(dirf + vdata)) #LOS + proper-motion position + velocity data (1k tracers)
+#rLOS, vLOS, vLOS_err = np.loadtxt(str(dirf + vdata)) #LOS velocity data (1k tracers)
 #rPM = rLOS
 
 R = np.loadtxt(str(dirf + 'fornax_phot_10k.txt')) #photometric tracer positions for individual fitting (10k tracers)
@@ -56,7 +72,7 @@ barrad_max = rmax
 bar_pnts = 300
 
 ###########################################################
-#Priors
+#Prior limits
 
 #Symmetrized velocity anisotropy priors:
 betr0min = -2
