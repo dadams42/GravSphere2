@@ -67,7 +67,7 @@ independent public release here:
 https://github.com/AnnaGenina/pyGravSphere
 new
 
-If you are not familiar with dynesty, check its website: dynesty.readthedocs.io 
+If you are not familiar with dynesty, check its website: https://dynesty.readthedocs.io/ 
 
 :::: EXAMPLES ::::
 We have included the examples addressed in Bañares-Hernández et al.
