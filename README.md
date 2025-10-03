@@ -31,6 +31,10 @@ https://ui.adsabs.harvard.edu/abs/2020MNRAS.498..144G/abstract
 https://ui.adsabs.harvard.edu/abs/2021arXiv210211890C/abstract
 https://ui.adsabs.harvard.edu/abs/2025A%26A...693A.104B/
 
+For the velocity PDF modeling: 
+https://ui.adsabs.harvard.edu/abs/2020MNRAS.499.5806S/abstract 
+Check the GitHub repo at: https://github.com/jls713/gh_alternative 
+
 You should also cite the use of dynesty for the sampling method:
 https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.3132S/abstract
 And use the sampler.citations option for all the related papers
