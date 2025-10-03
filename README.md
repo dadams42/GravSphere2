@@ -1,6 +1,6 @@
 # GravSphere2
 
-GravSphere 2 is an improved solver of the spherical higher-order Jeans equations, designed to mass-model systems of stellar tracers in equilibrium such as galaxies and star clusters with minimal bias and maximizing information content. It improves on previous versions of GravSphere and other methods by removing the need for binning, using self-consistent non-Gaussian velocity distribution function modeling and performing a fully general treatment of higher moments, solving the fourth-order Jeans equations. 
+GravSphere2 is an improved solver of the spherical higher-order Jeans equations, designed to mass-model systems of stellar tracers in equilibrium such as galaxies and star clusters with minimal bias and maximizing information content. It improves on previous versions of GravSphere and other methods by removing the need for binning, using self-consistent non-Gaussian velocity distribution function modeling and performing a fully general treatment of higher moments, solving the fourth-order Jeans equations. 
 
 Here is some important information about GravSphere2 (for more information, check also python source files of the code):
 
@@ -17,11 +17,13 @@ dynesty version 2.1.5
 
 
 :::: CITATIONS ::::
-If using this code, please cite the following code papers:
+If using this code, please acknowledge its use and cite the following code papers:
 
 Bañares-Hernández et al. (release paper): https://ui.adsabs.harvard.edu/abs/2025arXiv250924103B/abstract 
 
-and former GravSphere papers:
+and its link to its GitHub page: https://github.com/dadams42/GravSphere2 
+
+Former GravSphere papers:
 
 https://ui.adsabs.harvard.edu/abs/2017MNRAS.471.4541R/abstract
 https://ui.adsabs.harvard.edu/abs/2018MNRAS.481..860R/abstract
@@ -36,10 +38,6 @@ And use the sampler.citations option for all the related papers
 
 If using the J-factor integral calculation, please cite also:
 https://ui.adsabs.harvard.edu/abs/2020JCAP...09..004A/abstract
-
-Please acknowledge use of the gravsphere code and/or
-binulator, and link to its github page:
-https://github.com/justinread/gravsphere
 
 If using the Gaia Challenge mock data, please cite:
 https://ui.adsabs.harvard.edu/abs/2021MNRAS.501..978R/abstract
@@ -57,7 +55,7 @@ Note that this public release of the code is distinct from
 the previous versions of GravSphere that don't use higher-order
 Jeans or individual velocities (not 'bin free').
 
-Former versions include
+Former versions of GravSphere include
 GravSphere + binulator (https://github.com/justinread/gravsphere)
 which uses binning and Virial Shape Parameters
 and PyGravSphere, which has non-parametric 
