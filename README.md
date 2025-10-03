@@ -48,7 +48,6 @@ http://astrowiki.ph.surrey.ac.uk/dokuwiki/doku.php?id=start
 If using the simulated dwarf galaxy data, please cite:
 https://ui.adsabs.harvard.edu/abs/2025arXiv250418617T/abstract
 
-
 :::: BUGS ::::
 If you spot any bugs (or have any questions), please let us know!
 
@@ -81,24 +80,25 @@ To run an example:
    where you specify the data for each galaxy. Here you also decide whether
    to fit proper motions, include a massive stellar component, 'bin free' 
    fitting for the photometric tracers (not just kinematic ones) etc.
+   Update: we have included in initialise_ files the option to create Output
+   directories automatically if they don't exist. By default this includes
+   a folder with the name of your galaxy and Plots and Sampler Chains folders.
 
-2. The galaxy / object is selected by importing the initialisation file at 
+3. The galaxy / object is selected by importing the initialisation file at 
    the beginning of the gravsphere2.py file, where the likelihood and other
    arguments for the fit (e.g. priors) are specified.
-
-3. You will need to set up folders inside your output directory
-   to store the output files. We have done this for the case of
-   the Fornax simulation and Gaia Challenge data as an example
 
 4. We have set some notebooks to show an example of running the code
   (run_example.ipynb and run_multcpu_example.py for parallel programming
    with a multi-CPU machine / cluster). This will create and store a 
    checkpoint file from which all data can be retrieved and be 
-   run subsequently if needed.
+   run subsequently if needed (these are saved by default in the Sampler
+   Chains subfolders). 
 
-5. We have also created a notebook (plots_example_notebook.ipynb) where we 
+6. We have also created a notebook (plots_example_notebook.ipynb) where we 
    show examples of plotting density, slope, anisotropy, dispersion, and 
-   kurtosis profiles, similar to those from Bañares-Hernández et al.
+   kurtosis profiles, similar to those from Bañares-Hernández et al. The
+   output plots are stored in the Plots subfolders of the Output directory.
 
 
 :::: Setting up your own model ::::
