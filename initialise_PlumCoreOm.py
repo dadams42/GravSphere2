@@ -23,6 +23,8 @@ vdata = '1krltr_vels_plumcoreom.txt' #1k tracers (LOS + PMs)
 #vdata = '10krltr_vels_plumcoreom.txt' #10k tracers (LOS + PMs)
 
 #r denotes projected radius, and v velocities (with errors with a suffix _err), LOS = line-of-sight, PMR = radial PMs, PMt = tangential PMs.
+#note: input distances are in kpc and velocities (including proper motions) in km/s, also velocities are relative to the system, so you should subtract 
+#global averages beforehand
 
 rLOS, vLOS, vLOS_err, vPMt, vPMt_err, vPMR, vPMR_err = np.loadtxt(str(dirf + vdata)) #LOS + proper-motion position + velocity data (1k tracers)
 rPM = rLOS
