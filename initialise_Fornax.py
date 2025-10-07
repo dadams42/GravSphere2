@@ -31,6 +31,8 @@ vdata = 'forall100.txt' #100 tracers (LOS + PMs)
 #you can do rLOS, vLOS, vLOS_err = np.loadtxt(dirf + vdata) and propermotion = False (no PMs). We've also included the 10, 25, 50 tracer files.
 
 #r denotes projected radius, and v velocities (with errors with a suffix _err), LOS = line-of-sight, PMR = radial PMs, PMt = tangential PMs.
+#note: input distances are in kpc and velocities (including proper motions) in km/s, also velocities are relative to the system, so you should subtract 
+#global averages beforehand
 
 rLOS, vLOS, vLOS_err, vPMt, vPMt_err, vPMR, vPMR_err = np.loadtxt(str(dirf + vdata)) #LOS + proper-motion position + velocity data (1k tracers)
 rPM = rLOS
