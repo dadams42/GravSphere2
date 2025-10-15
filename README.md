@@ -14,6 +14,7 @@ scipy version 1.15.1
 numpy version 1.26.4
 matplotlib version 3.9.0
 dynesty version 2.1.5
+corner version 2.2.2
 
 
 :::: CITATIONS ::::
