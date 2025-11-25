@@ -91,12 +91,14 @@ To run an example:
    the beginning of the gravsphere2.py file, where the likelihood and other
    arguments for the fit (e.g. priors) are specified.
 
-4. We have set some notebooks to show an example of running the code
-  (run_example.ipynb and run_multcpu_example.py for parallel programming
+4. We have set some scripts to show an example of running the code
+  (run_example_notebook.ipynb and run_multcpu_example.py for parallel programming
    with a multi-CPU machine / cluster). This will create and store a 
    checkpoint file from which all data can be retrieved and be 
    run subsequently if needed (these are saved by default in the Sampler
-   Chains subfolders). 
+   Chains subfolders). Note that the script for running is separate from
+   the gravsphere2.py file, so you'll need to import the file and then
+   do the run with dynesty (as we do in the example notebook and the Python script). 
 
 6. We have also created a notebook (plots_example_notebook.ipynb) where we 
    show examples of plotting density, slope, anisotropy, dispersion, and 
