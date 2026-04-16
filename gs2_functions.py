@@ -505,25 +505,25 @@ def sigp_prop_k(r1,r2,r3,baranr,Sigfunc,M,beta,betaf,Mpars,\
         sigr4q = np.interp(rq,rint,sigr4,right=0)
         bpq = beta(rq, betppars)
         dbpq = dbeta(rq, betppars)
-        bdif = 0.75 * cth3 * \
+        bdif = 0.75 * \
         (bpq - beta(rq, betpars)) * np.interp(rq,rint,sigr2,right=0) \
         * G * M(rq,Mpars) / rq**2 
 
         sigLOS4[i] = 2.0*rint[i]/Sig[i]*\
                      integrator(((\
                       1.0 - 2.0*bpq * cth2 + 0.5*bpq*(1.0 + bpq) * cth4 - 0.25 * dbpq * rint[i] * cth3)*sigr4q\
-                              + rint[i] * bdif)*nuq/cth2,th)
+                              + rint[i] * cth3 * bdif)*nuq/cth2,th)
         
         sigpmt4[i] = 2.0*rint[i]/Sig[i]*\
                      integrator(((\
                      (1.0 - bpq)*(2 - bpq) - 0.5 * rq * dbpq)*0.5*sigr4q\
-                              + rint[i] * bdif)*nuq/cth2,th)
+                              + bdif * rq)*nuq/cth2,th)
         
         sigpmr4[i] = 2.0*rint[i]/Sig[i]*\
                      integrator((((\
                      (1.0 - bpq)*(2 - bpq) - 0.5 * rq * dbpq)*(1.0 - 2.0 * cth2 + cth4) * 0.5  \
                               + 2*(1 - bpq) * cth2 - (1 - 2 * bpq) * cth4)*sigr4q \
-                                 + rint[i] * bdif * (1.0 - 2.0 * cth2 + 2.0 * cth4))*nuq/cth2,th)
+                                 +  bdif * rq * (1.0 - 2.0 * cth2 + cth4))*nuq/cth2,th)
 
     #check that there are no negative moments over the range specified
     neg = False
