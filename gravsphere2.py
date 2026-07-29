@@ -156,7 +156,7 @@ def lnprob(Theta): #full log-likelihood function
     surc = theta[2*n_betpars: 2*n_betpars+nu_components] #photometric parameters
 
 
-    #defines tracer densities and stellar if present mass
+    #defines tracer densities and stellar mass if present
 
     if individual == True:
 
